@@ -119,8 +119,42 @@ a:hover {
   background-repeat: no-repeat;
   color: #fff;
   display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  padding-top: 60px;
+  align-items: center;
+}
+
+.nav {
+  background-color: rgba(255, 255, 255, 0.7);
+  /* width: 80%; */
+  height: 35px;
+  color: #282828;
+  display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding: 0 7rem;
+  margin-top: 2rem;
+}
+
+.nav_menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav_menu li {
+  padding: 0 1rem;
+  border-left: 1px solid #282828;
+  font-weight: bold;
+}
+
+.nav_menu li:first-child {
+  border-left: 0px;
+}
+
+.nav_menu li a:hover {
+  color: #428b6e;
 }
 
 main {
