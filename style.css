@@ -219,24 +219,16 @@ h3 {
 
 .gallery {
   display: flex;
-
-  justify-content: center;
   flex-flow: row wrap;
 }
 
 .card {
   padding: 8px;
-}
-
-.img_wrapper {
-  width: 200px;
-  height: 180px;
-  background-color: gray;
-  overflow: hidden;
+  flex:1 150px;
 }
 
 .img_wrapper img {
-  height: 100%;
+  width: 100%;
 }
 
 footer {
@@ -262,15 +254,7 @@ footer {
     padding: 0.2rem 1rem;
     border-left: 0;
   }
-  .img_wrapper {
-    width: 170px;
-    height: 150px;
-  }
+  
 }
 
-@media (max-width: 320px) {
-  .img_wrapper {
-    width: 300px;
-    height: 250px;
-  }
-}
+
