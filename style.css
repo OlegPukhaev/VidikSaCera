@@ -36,12 +36,12 @@ header {
   background-color: #6ec09f;
   color: #fff;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
   z-index: 10;
-  padding: 0 140px;
+  padding: 0 1rem;
 }
 
 .social {
@@ -98,6 +98,11 @@ header {
   background-image: url("./image/social/Facebook_over.png");
 }
 
+.lang {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .lang a {
   margin-left: 0.5rem;
 }
@@ -127,33 +132,30 @@ a:hover {
 
 .nav {
   background-color: rgba(255, 255, 255, 0.7);
-  /* width: 80%; */
   height: 35px;
   color: #282828;
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   padding: 0 7rem;
   margin-top: 2rem;
 }
 
-.nav_menu {
-  display: flex;
-  list-style-type: none;
-}
-
-.nav_menu li {
+.nav div {
   padding: 0 1rem;
   border-left: 1px solid #282828;
   font-weight: bold;
 }
 
-.nav_menu li:first-child {
+.nav div a {
+}
+
+.nav div:first-child {
   border-left: 0px;
 }
 
-.nav_menu li a:hover {
+.nav div a:hover {
   color: #428b6e;
 }
 
@@ -164,4 +166,24 @@ main {
 footer {
   background-color: #428b6e;
   height: 145px;
+}
+
+@media (min-width: 1440px) {
+  .social_menu {
+    padding: 0 24rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    height: auto;
+    max-width: 320px;
+    width: 95%;
+    padding: 1rem 0;
+  }
+  .nav div {
+    width: 95%;
+    padding: 0.2rem 1rem;
+    border-left: 0;
+  }
 }
