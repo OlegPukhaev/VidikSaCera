@@ -160,7 +160,83 @@ a:hover {
 }
 
 main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
   flex: 1;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 0;
+  flex: 1;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+}
+
+h2 {
+  font-family: "Arial Bold", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+.mt-2 {
+  margin-top: 2em;
+}
+.mt-3 {
+  margin-top: 3em;
+}
+
+.color_green {
+  color: #5fbb97;
+}
+
+.color_gray {
+  color: #b3b1b1;
+}
+
+.color_white {
+  color: #ffffff;
+}
+
+.gallery {
+  display: flex;
+
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.card {
+  padding: 8px;
+}
+
+.img_wrapper {
+  width: 200px;
+  height: 180px;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.img_wrapper img {
+  height: 100%;
 }
 
 footer {
@@ -185,5 +261,16 @@ footer {
     width: 95%;
     padding: 0.2rem 1rem;
     border-left: 0;
+  }
+  .img_wrapper {
+    width: 170px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 320px) {
+  .img_wrapper {
+    width: 300px;
+    height: 250px;
   }
 }
